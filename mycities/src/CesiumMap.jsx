@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Viewer, Cartesian3, Color, VerticalOrigin, Math as CesiumMath } from 'cesium';  
 import 'cesium/Build/Cesium/Widgets/widgets.css';  
+import { cities } from './cities';
 
 const CesiumMap = () => {
     const cesiumContainerRef = useRef(null);
@@ -11,38 +12,6 @@ const CesiumMap = () => {
             terrainProviderViewModel: undefined,  
             
         });
-
-                const cities = [
-            {name: 'Tashkent',
-                position: Cartesian3.fromDegrees(69.2401, 41.2995),
-                description: 'Tashkent'
-            },
-            {
-                name: 'Moscow',
-                position: Cartesian3.fromDegrees(37.6173, 55.7558),
-                description: 'Moscow'
-            },
-            {
-                name: 'Tampere',
-                position: Cartesian3.fromDegrees(23.761, 61.4978),
-                description: 'Tampere'
-            },
-            {
-                name: 'Joensuu',
-                position: Cartesian3.fromDegrees(29.7604, 62.6000),
-                description: 'Joensuu'
-            },
-            {
-                name: 'Kangasala',
-                position: Cartesian3.fromDegrees(24.0738, 61.4639),
-                description: 'Kangasala'
-            },
-            {
-                name: 'Turku',
-                position: Cartesian3.fromDegrees(22.2666, 60.4518),
-                description: 'Turku'
-            }
-        ];
 
         cities.forEach(city => {
             viewer.entities.add({
