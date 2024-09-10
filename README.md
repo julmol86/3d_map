@@ -6,7 +6,7 @@ This project integrates CesiumJS with React to display a 3D globe with cities ma
 
 ### Setup
 
-To get started, you'll need to have Node.js and npm (or Yarn) installed
+To get started, you'll need to have Node.js and npm installed
 
 Clone the Repository and run:
 
